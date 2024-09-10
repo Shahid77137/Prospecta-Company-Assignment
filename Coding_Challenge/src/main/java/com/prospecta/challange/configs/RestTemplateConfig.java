@@ -7,10 +7,6 @@ import org.springframework.web.client.RestTemplate;
 
 import java.time.Duration;
 
-
-/**
- * Configures RestTemplate with custom timeouts for API requests.
- */
 @Configuration
 public class RestTemplateConfig {
 

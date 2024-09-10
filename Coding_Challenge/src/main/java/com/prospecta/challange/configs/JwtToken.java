@@ -19,7 +19,7 @@ public class JwtToken {
         System.out.println(authoritiesString);
 
         return Jwts.builder()
-                .setIssuer("Radhikesh")
+                .setIssuer("Shahid")
                 .setSubject("JWT_Token")
                 .claim("username", username)
                 .claim("authorities", authoritiesString)

@@ -6,9 +6,6 @@ import jakarta.validation.constraints.Positive;
 import lombok.Data;
 
 
-/**
- * Represents a product with validation constraints for title, description, category, and price.
- */
 @Data
 public class Product {
 

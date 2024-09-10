@@ -13,10 +13,6 @@ import org.springframework.web.client.RestClientException;
 import org.springframework.web.server.ResponseStatusException;
 import com.prospecta.challange.model.Product;
 
-
-/**
- * Service to interact with external API for fetching and saving product data.
- */
 @Service
 public class ApiService {
 

@@ -1,19 +1,34 @@
 package com.prospecta.entity;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
+
 public class Product {
-    private int id;
-    private String title;
-    private Double price;
-    private String description;
-    private String image;
-    private String category;
+	 private Long id;
+
+	    @NotBlank(message = "Title is mandatory")
+	    private String title;
+
+	    @NotBlank(message = "Description is mandatory")
+	    private String description;
+
+	    @NotBlank(message = "Category is mandatory")
+	    private String category;
+
+	    @NotNull(message = "Price is mandatory")
+	    @Positive(message = "Price must be greater than zero")
+	    private Double price;
+
+	    private String image;
+
 
     
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
